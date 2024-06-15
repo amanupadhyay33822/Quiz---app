@@ -1,0 +1,170 @@
+/* common css start*/
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.722),
+      rgba(11, 17, 20, 0.7)
+    ),
+    url(../public//bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  background: transparent;
+  box-shadow: rgb(20 1 1 / 41%) 0px 12px 33px;
+  transition: all 3s ease-in-out;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.25rem;
+  border-radius: 60px;
+  cursor: pointer;
+  margin: 0% auto;
+  display: block;
+}
+
+button:hover {
+  background: linear-gradient(to left, #28282b, #5c5c5c);
+  transition: all 3s ease-in-out;
+}
+
+h1,
+p,
+h4 {
+  background: -webkit-linear-gradient(#efffef, #8a8a8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  text-align: center;
+}
+h1 {
+  font-size: 3.8rem;
+}
+p {
+  font-size: 1.5rem;
+  color: white;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+input {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 10% auto;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  display: block;
+}
+.error {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+ul {
+  list-style: none;
+  margin: 6% 0;
+  padding: 0;
+}
+li {
+  font-size: 1.2rem;
+  border-radius: 20px;
+  margin: 2rem;
+  color: white;
+  box-shadow: rgb(20 1 1 / 15%) 0px 3px 15px;
+  padding: 16px 25px;
+}
+li:hover {
+  cursor: pointer;
+}
+ul li::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+.Main_Div {
+  display: flex;
+  justify-content: center;
+  margin: 12% auto;
+  background: rgba(0, 0, 255, 0.305);
+  width: 50%;
+  height: auto;
+  /* margin-top: 1px; */
+  border-radius: 20px;
+  padding: 38px 10px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+/* common css end */
+
+/* home css start */
+.Home_Div .first_p {
+  text-align: center;
+}
+
+/* home css end */
+
+/* instructions css start */
+.Instructions_Div li{
+  box-shadow: none;
+  margin: auto;
+}
+.Instructions_Div span{
+  text-transform: capitalize;
+}
+/* instructions css end */
+
+/* quiz css start */
+.Quiz_Div {
+  width: 100%;
+
+}
+.score{
+  /* background-color: red; */
+}
+.buttons_div{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.buttons_div button{
+  margin: 0;
+}
+.quiz_top_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0% 5%;
+}
+.quiz_top_div .time,
+.quiz_top_div h2 {
+  font-size: 1rem;
+  box-shadow: rgb(20 1 1 / 15%) 0px 3px 15px;
+  padding: 10px 25px;
+  border-radius: 12px;
+  color: greenyellow;
+}
+.answerCss {
+  border: 1px solid gray;
+}
+
+/* quiz css end */
+
+
+/* ################### mobile devices ######################*/
+@media screen and (max-width:767px) {
+  .Main_Div {
+    width: 85%;
+  }
+}
